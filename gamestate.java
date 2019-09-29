@@ -14,6 +14,10 @@ public class Main {
     		System.out.println("X wins");
             return;
     	}
+	else if (flag1==0 && flag2==0 && Xcount+Ocount==9) {
+            System.out.println("Draw");
+            return;
+        }
     }
 	public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -95,10 +99,6 @@ public class Main {
             }
             else if (flag1==0 && flag2==0 && Xcount==Ocount){
             	System.out.println("Game not finished");
-                return;
-            }
-            else if (flag1==0 && flag2==0 && Xcount+Ocount==9) {
-            	System.out.println("Draw");
                 return;
             }
             Main ob=new Main();
